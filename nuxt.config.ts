@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: [
-    '../pruvious-base'
+    [process.env.BASE_LAYER || 'github:magnus-bb/pruvious-base', { install: true }]
   ],
 
   devtools: { enabled: true },
