@@ -1,0 +1,20 @@
+{
+  "name": "pruvious-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "pruvious dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/eslint-config": "^0.1.1",
+    "eslint": "^8.28.0",
+    "nuxt": "^3.11.1",
+    "pruvious": "^3.11.2",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  }
+}
