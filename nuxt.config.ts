@@ -1,19 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  extends: [
-    [process.env.BASE_LAYER || 'github:magnus-bb/pruvious-base', { install: true }]
-  ],
+	extends: ['.pruvious-base'],
 
-  devtools: { enabled: true },
+	devtools: { enabled: true },
 
-  pruvious: {
-    jwt: {
-      secretKey: "Cp3ehREayzaa1OimUrpSRRbaWrVtOk5MBuZOhbJPCFt-xGuG_DG4CvKL_iUz50lB"
-    }
-  },
+	pruvious: {
+		jwt: {
+			secretKey: 'Cp3ehREayzaa1OimUrpSRRbaWrVtOk5MBuZOhbJPCFt-xGuG_DG4CvKL_iUz50lB',
+		},
+	},
 
-  typescript: {
+	typescript: {
 		strict: true,
+	},
+
+	nitro: {
+		preset: 'bun',
 	},
 
 	$development: {
