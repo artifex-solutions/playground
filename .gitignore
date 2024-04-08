@@ -5,6 +5,7 @@
 .nitro
 .cache
 dist
+nuxt.d.ts
 
 # Node dependencies
 node_modules
@@ -17,6 +18,10 @@ logs
 .DS_Store
 .fleet
 .idea
+framework
+
+# Local History
+.history
 
 # Local env files
 .env

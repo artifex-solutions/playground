@@ -1,7 +1,7 @@
 import { symlink } from 'node:fs/promises'
 import { downloadTemplate } from 'giget'
 import chalk from 'chalk'
-import { PRUVIOUS_BASE_REPO, PRUVIOUS_BASE_TARGET } from './constants'
+import { PRUVIOUS_BASE_REPO, PRUVIOUS_BASE_TARGET } from './constants.js'
 
 const { log, error } = console
 
@@ -18,7 +18,7 @@ if (PRUVIOUS_BASE_PATH) {
 	try {
 		await symlink(PRUVIOUS_BASE_PATH, PRUVIOUS_BASE_TARGET, 'dir')
 	} catch (err) {
-		if ((err as { errno: number }).errno === -17) {
+		if (err.errno === -17) {
 			log(PRUVIOUS_BASE_TARGET, 'already exists.')
 			process.exit()
 		}
