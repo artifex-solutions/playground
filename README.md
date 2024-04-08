@@ -13,7 +13,7 @@ Documentation: [https://pruvious.com/docs](https://pruvious.com/docs)
 Make sure to install the dependencies:
 
 ```bash
-bun i
+pnpm i
 ```
 
 Installing dependencies will also symlink (for development) or download (for production) the base layer to the project based on the presence of the environment variable `PRUVIOUS_BASE_PATH`.
@@ -23,7 +23,7 @@ Installing dependencies will also symlink (for development) or download (for pro
 Start the development server on `http://localhost:3000`:
 
 ```bash
-bun dev
+pnpm dev
 ```
 
 ## Production
@@ -31,7 +31,7 @@ bun dev
 Build the website for production:
 
 ```bash
-bun run build
+pnpm build
 ```
 
 Check out the [deployment documentation](https://pruvious.com/docs/deployment) for more information.
