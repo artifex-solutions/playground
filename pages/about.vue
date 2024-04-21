@@ -1,9 +1,5 @@
 <template>
-	<div class="bg-surface">
-		<h1>Application layer layout</h1>
-
-		<slot />
-	</div>
+	<p>this is a static about page</p>
 </template>
 
 <script setup lang="ts"></script>

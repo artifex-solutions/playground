@@ -2,11 +2,12 @@ import type { Config } from 'tailwindcss'
 
 export default {
 	content: [
-		'.pruvious-base/blocks/**/*.vue',
-		'.pruvious-base/components/**/*.vue',
-		'.pruvious-base/assets/styles/**/*.css',
-		'.pruvious-base/layouts/**/*.vue',
-		'.pruvious-base/pages/**/*.vue',
+		'./node_modules/pruvious-base/blocks/**/*.vue',
+		'./node_modules/pruvious-base/components/**/*.vue',
+		'./node_modules/pruvious-base/assets/styles/**/*.css',
+		'./node_modules/pruvious-base/layouts/**/*.vue',
+		'./node_modules/pruvious-base/pages/**/*.vue',
+		'./node_modules/pruvious-base/presets/base/**/*.js',
 		'./blocks/**/*.vue',
 		'./components/**/*.vue',
 		'./assets/styles/**/*.css',
@@ -27,5 +28,5 @@ export default {
 		},
 	},
 	plugins: [],
-	presets: [require('./.pruvious-base/tailwind.config.ts')],
+	presets: [require('pruvious-base/tailwind.config.ts')],
 } satisfies Config

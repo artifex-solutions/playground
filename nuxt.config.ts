@@ -1,8 +1,6 @@
-import { PRUVIOUS_BASE_TARGET } from './scripts/constants'
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	extends: [PRUVIOUS_BASE_TARGET],
+	extends: ['pruvious-base'],
 
 	devtools: { enabled: true },
 

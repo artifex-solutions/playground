@@ -6,7 +6,7 @@ Documentation: [https://pruvious.com/docs](https://pruvious.com/docs)
 ## Environment
 |Variable|Default value|Explanation|
 |-|-|-|
-|PRUVIOUS_BASE_PATH|	|Setting this to a local path in development will symlink the base layer into this project. Omitting the value will download the base layer from github instead.|
+| | | |
 
 
 ## Setup
@@ -16,10 +16,20 @@ Make sure to install the dependencies:
 pnpm i
 ```
 
-Installing dependencies will also symlink (for development) or download (for production) the base layer to the project based on the presence of the environment variable `PRUVIOUS_BASE_PATH`.
+## Development
+### Setup
+When developing the `pruvious-base` layer, use the following command to symlink to the base layer instead of downloading the package from git:
 
-## Development server
+```bash
+pnpm link <path-to-repo>
 
+# E.g.:
+pnpm link ../pruvious-base
+```
+
+This will overwrite the `pruvious-base` package with your local version. HMR is not guaranteed.
+
+### Serve
 Start the development server on `http://localhost:3000`:
 
 ```bash
