@@ -1,5 +1,5 @@
 {
-  "name": "pruvious-demo",
+  "name": "@artifex-solutions/playground",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,6 +13,6 @@
     "dotenv": "^16.4.5"
   },
   "dependencies": {
-    "pruvious-base": "git+https://github.com/magnus-bb/pruvious-base.git#main"
+    "pruvious-base": "git+https://github.com/artifex-solutions/base.git#main"
   }
 }
