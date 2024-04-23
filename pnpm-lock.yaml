@@ -5,9 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  pruvious-base:
-    specifier: git+https://github.com/magnus-bb/pruvious-base.git#main
-    version: link:../pruvious-base
+  '@artifex-solutions/base':
+    specifier: git+https://github.com/artifex-solutions/base.git#main
+    version: link:../base
 
 devDependencies:
   dotenv:

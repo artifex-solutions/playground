@@ -18,16 +18,16 @@ pnpm i
 
 ## Development
 ### Setup
-When developing the `pruvious-base` layer, use the following command to symlink to the base layer instead of downloading the package from git:
+When developing the `@artifex-solutions/base` layer, use the following command to symlink to the base layer instead of downloading the package from git:
 
 ```bash
 pnpm link <path-to-repo>
 
 # E.g.:
-pnpm link ../pruvious-base
+pnpm link ../base # or wherever the base layer is located
 ```
 
-This will overwrite the `pruvious-base` package with your local version. HMR is not guaranteed.
+This will overwrite the `@artifex-solutions/base` package with your local version. HMR is not guaranteed.
 
 ### Serve
 Start the development server on `http://localhost:3000`:
